@@ -1,0 +1,85 @@
+<ion-header class="tool">
+
+    <ion-toolbar color="dark" >
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title class="tool" class="title">Lançamentos</ion-title>
+    </ion-toolbar>
+    
+  </ion-header>
+  <ion-content>
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    Clique para ver os titulos
+  </ion-button>
+
+  <ion-list line="full">
+   <ion-item>
+     <p>Castlevania - PS4  R$123,00</p>
+    </ion-item> 
+    <ion-item>
+     <p>Devil my CRay PC  R$149,00 </p>
+   </ion-item> 
+   <ion-item>
+   <p>Car 2910 - P R$159,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>Crofire - PSP </p>
+  </ion-item> 
+  <ion-item>
+   <p>Ger 08 - PC R$159,00</p>
+  </ion-item> 
+  <ion-item>
+  <p>Castlevania - PS4 R$199,00</p>
+</ion-item> 
+<ion-item>
+  <p>Residentt PC R$199,00</p>
+</ion-item> 
+<ion-item>
+  <p>The PIlot- PC R$159,00</p>
+</ion-item>  
+<ion-item>
+  <p>Crofire pro R$195,00</p>
+  </ion-item>
+  <ion-item>
+<p>Gerador 00 - PC R$199,00</p>
+  </ion-item>
+  <ion-item>
+      <p>BnditCool- PS4  R$123,00</p>
+  </ion-item> 
+  <ion-item>
+      <p>PEs 2019 PC  R$149,00 </p>
+  </ion-item> 
+  <ion-item>
+   <p>HackTheFlag - PS R$159,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>Crofire - Xbox </p>
+  </ion-item> 
+  <ion-item>
+   <p>Ger 08 - PC R$159,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>Golden-axe- PS4 R$199,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>Farm Simulator PC R$199,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>The PIlot 3 - P R$159,00</p>
+  </ion-item>
+  <ion-item>
+   <p>Shazamm R$195,00</p>
+  </ion-item> 
+  <ion-item>
+   <p>Gerador 00  - PC R$199,00</p>
+  </ion-item> 
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
